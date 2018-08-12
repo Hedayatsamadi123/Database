@@ -532,10 +532,3 @@ insert into MOCK_DATA (id, name, email, phone) values (499, 'Morty Dakers', 'mda
 insert into MOCK_DATA (id, name, email, phone) values (500, 'Aloysia Franc', 'afrancdv@dmoz.org', '+33 (374) 178-2843');
 
  
--- Create an index on the name column of the student table.
-CREATE INDEX idx_studentName
-ON student (name);
-
--- Add a new column to the class table named status which can only have the following values: not-started, ongoing, finished (hint: enumerations).
-ALTER TABLE class
-ADD `status` ENUM ('not-started', 'ongoing', 'finished');
